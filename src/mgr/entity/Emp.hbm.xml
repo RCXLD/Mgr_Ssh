@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+	"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+	"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="mgr.entity">
+	<class name="Emp" table="emp">
+		<id name="id" type="int" column="id">
+			<generator class="identity" />
+		</id>
+		<property name="empid" type="string" column="empid"></property>
+		<property name="empname" type="string" column="empname"></property>
+		<property name="icid" type="string" column="icid"></property>
+		<property name="eplace" type="string" column="eplace"></property>
+
+		<property name="empphone" type="string" column="empphone"></property>
+		<property name="empbirth" type="string" column="empbirth"></property>
+		<property name="empsex" type="string" column="empsex"></property>
+		<property name="empedu" type="string" column="empedu"></property>
+		<property name="empqq" type="string" column="empqq"></property>
+		<property name="emptech" type="string" column="emptech"></property>
+
+		<property name="deptid" type="string" column="deptid"></property>
+		<property name="emppost" type="string" column="emppost"></property>
+		<property name="elinkman" type="string" column="elinkman"></property>
+		<property name="elinkphone" type="string" column="elinkphone"></property>
+		<property name="empaddr" type="string" column="empaddr"></property>
+		<property name="empin" type="string" column="empin"></property>
+		<property name="empout" type="string" column="empout"></property>
+	</class>
+</hibernate-mapping>

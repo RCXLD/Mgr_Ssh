@@ -1,0 +1,186 @@
+/* CSS Document */
+body {
+	padding-top: 40px;
+}
+
+section {
+	displya: block;
+}
+
+footer {
+	display: block;
+}
+
+/* ----------------- nav bar -------------------*/
+ul.top-nav li a {
+	font-size: 18px;
+}
+
+.navbar-inverse .nav>li>a {
+	color: #fff;
+}
+
+.navbar-inverse .nav>li>a:hover {
+	color: #0088cc;
+}
+
+.navbar-inverse .brand {
+	color: #fff;
+	font-size: 23px;
+}
+
+.navbar-inner {
+	heigth: 60px;
+}
+
+/* ----------------- left menu -------------------*/
+#left-menu {
+	background-color: #f6f6f6;
+	padding: 15px;
+	border: 1px solid #CCCCCC;
+	border-radius: 4px 4px 4px 4px;
+	min-height: 600px;
+}
+
+.lm-main-content {
+	background-color: #f6f6f6;
+	padding: 15px;
+	border: 1px solid #CCCCCC;
+	border-radius: 4px 4px 4px 4px;
+	margin-left: 10px;
+	min-height: 600px;
+}
+
+.nav-header {
+	font-size: 16px;
+	color: #333;
+	padding-left: 0px;
+}
+
+/* ----------------- index -------------------*/
+#idx-content {
+	width: 100%;
+	height: 600px;
+	background-image: url(../image/primary_bg_3.jpg);
+	background-position: center -20px;
+	background-repeat: no-repeat;
+	clear: both;
+	position: relative;
+}
+
+#idx-content:before,#idx-content:after {
+	content: "";
+	display: table;
+	line-height: 0;
+}
+
+.login-row {
+	height: 600px;
+	margin-bottom: 20px;
+}
+
+#idx-login {
+	margin-top: 150px;
+	background-color: #e0e0e0;
+	border-radius: 4px 4px 4px 4px;
+	opacity: 0.9;
+	padding: 20px 15px;
+}
+
+.idx-control-group label {
+	text-align: left !important;
+}
+
+.idx-block {
+	width: 28%;
+	float: left;
+	padding: 10px 20px;
+}
+
+.idx-block-row {
+	float: left;
+	clear: both;
+}
+
+#idx-footer {
+	width: 100%;
+	float: left;
+	padding: 40px 0 50px 0;
+	margin-top: 20px;
+	background-color: #ccc;
+	clear: both;
+}
+
+#idx-footer-nav {
+	margin-bottom: 20px;
+}
+
+.footer-content h4 {
+	color: #0080cc
+}
+
+/* ----------------- hr -------------------*/
+#hr-submit {
+	margin-top: 30px;
+}
+
+.hr-label {
+	text-align: left !important;
+}
+
+#client-tab-content label,#hr-tab-content label {
+	width: 70px;
+}
+
+#client-tab-content .controls,#hr-tab-content .controls {
+	margin-left: 80px;
+}
+
+.dataTables_length label {
+	width: 250px !important;
+}
+
+.dataTables_length select {
+	width: 80px;
+}
+
+.dataTables_filter label {
+	width: 300px !important;
+}
+
+.tab-header {
+	
+}
+
+.tab-header a {
+	background-color: #ccc !important;
+	color: #000 !important;
+}
+
+#EmpList {
+	clear: both;
+}
+
+#StatisticsList {
+	clear: both;
+}
+
+tr.even td.sorting_1 {
+	background-color: #fff;
+}
+
+#ClientList {
+	clear: both;
+}
+
+#CDemandList {
+	clear: both;
+}
+
+#DeptList {
+	clear: both;
+}
+
+#PostList {
+	clear: both;
+}

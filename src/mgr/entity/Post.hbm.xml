@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+	"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+	"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="mgr.entity">
+	<class name="Post" table="post">
+		<id name="id" type="int" column="id">
+			<generator class="identity" />
+		</id>
+		<property name="postid" type="string" column="postid"></property>
+		<property name="postname" type="string" column="postname"></property>
+		<property name="postctn" type="string" column="postctn"></property>
+		<property name="deptid" type="string" column="deptid"></property>
+	</class>
+</hibernate-mapping>

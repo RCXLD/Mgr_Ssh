@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-module
+  type="WEB"
+  name="mgr"
+  id="myeclipse.1378123687841"
+  context-root="/mgr"
+  j2ee-spec="5.0"
+  archive="mgr.war">
+  <attributes>
+    <attribute name="webrootdir" value="WebRoot" />
+  </attributes>
+</project-module>
+

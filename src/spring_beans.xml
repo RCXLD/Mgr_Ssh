@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<import resource="spring_hibernate.xml" />
+
+	<!-- Dao -->
+	<bean id="userDao" class="mgr.dao.UserDaoImpl" autowire="byType">
+		<property name="hibernateTemplate" ref="hibernateTemplate" />
+	</bean>
+
+	<bean id="empDao" class="mgr.dao.EmpDaoImpl" autowire="byType">
+		<property name="hibernateTemplate" ref="hibernateTemplate" />
+	</bean>
+
+	<bean id="deptDao" class="mgr.dao.DeptDaoImpl" autowire="byType">
+		<property name="hibernateTemplate" ref="hibernateTemplate" />
+	</bean>
+
+	<bean id="postDao" class="mgr.dao.PostDaoImpl">
+		<property name="hibernateTemplate" ref="hibernateTemplate" />
+	</bean>
+
+	<!-- Service -->
+	<bean id="userService" class="mgr.service.UserServiceImpl"
+		autowire="byType">
+		<property name="userDao" ref="userDao" />
+	</bean>
+
+	<bean id="empService" class="mgr.service.EmpServiceImpl" autowire="byType">
+		<property name="empDao" ref="empDao" />
+	</bean>
+
+	<bean id="deptService" class="mgr.service.DeptServiceImpl"
+		autowire="byType">
+		<property name="deptDao" ref="deptDao" />
+	</bean>
+
+	<bean id="postService" class="mgr.service.PostServiceImpl"
+		autowire="byType">
+		<property name="postDao" ref="postDao" />
+	</bean>
+
+	<!-- Action -->
+	<bean id="user" class="mgr.action.UserAction" scope="prototype">
+		<property name="userService" ref="userService" />
+	</bean>
+
+	<bean id="emp" class="mgr.action.EmpAction" scope="prototype">
+		<property name="empService" ref="empService" />
+	</bean>
+
+	<bean id="dept" class="mgr.action.DeptAction" scope="prototype">
+		<property name="deptService" ref="deptService" />
+	</bean>
+
+	<bean id="post" class="mgr.action.PostAction" scope="prototype">
+		<property name="postService" ref="postService" />
+	</bean>
+
+</beans>

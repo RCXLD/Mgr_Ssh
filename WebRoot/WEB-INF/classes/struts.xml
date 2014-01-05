@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.1.7//EN"
+    "http://struts.apache.org/dtds/struts-2.1.7.dtd">
+<struts>
+	<constant name="struts.objectFactory" value="spring"></constant>
+	<package name="mgr-default" extends="json-default" namespace="/">
+		<action name="user" class="user">
+			<result name="LoginInfo" type="json"></result>
+			<result name="ExitInfo">/page/index.jsp</result>
+		</action>
+
+		<action name="main">
+			<result>/page/client.jsp</result>
+		</action>
+
+		<action name="hr">
+			<result>/page/hr.jsp</result>
+		</action>
+
+		<action name="emp" class="emp">
+			<result name="AddInfo" type="json"></result>
+			<result name="EditInfo" type="json"></result>
+			<result name="DeleteInfo" type="json"></result>
+		</action>
+		<action name="dept" class="dept">
+			<result name="AddInfo" type="json"></result>
+			<result name="EditInfo" type="json"></result>
+			<result name="DeleteInfo" type="json"></result>
+		</action>
+		<action name="post" class="post">
+			<result name="AddInfo" type="json"></result>
+			<result name="EditInfo" type="json"></result>
+			<result name="DeleteInfo" type="json"></result>
+		</action>
+	</package>
+</struts>
